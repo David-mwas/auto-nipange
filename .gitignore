@@ -4,3 +4,6 @@ extensions.json
 launch.json
 settings.json
 /static/assets/icons
+/slider.css
+/slider.js
+/slider.html
