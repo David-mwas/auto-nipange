@@ -3,3 +3,4 @@ extensions.json
 *.json
 launch.json
 settings.json
+/static/assets/icons
