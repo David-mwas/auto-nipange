@@ -1,0 +1,125 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    outline: none;
+    /* border: none; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background:linear-gradient(rgba(23,230,23,.8), rgba(23,150,200,.8));
+    background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.8)),url("/static/assets/images/MuchaTseBle.jpeg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: black; */
+
+    height: 100%;
+    width: 100%;
+}
+.login form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    /* background: red; */
+
+    /* background:linear-gradient( rgba(23,150,200,.3),rgba(23,230,23,.4)); */
+    box-shadow:inset 0px 0px 10px white;
+    background:linear-gradient(rgba(23,230,23,.8), rgba(23,150,200,.8));
+    border-radius: 5px;
+    height: 70%;
+    width: 23%;  
+}
+form .inputs{
+    /* background: red; */
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 10px;   
+}
+form h2{
+    font-family:sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+}
+form .inputs>input{
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;  
+    
+}
+input[type="submit"]{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px;
+    width: 70%; 
+    margin-bottom: 20px;  
+}
+.logingoogle{
+    margin-top: 10px;
+}
+a{
+    font-style:oblique;
+    color: black;
+    text-decoration: none;
+}
+a>i{
+    color: black;
+    font-size: 20px;
+    text-shadow: 1px 2px 5px black;
+}
+.black{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    color: black;
+}.signup{
+    font-weight: bolder;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .login form{
+        width: 35%;  
+    }
+}
+@media screen and (max-width:768px){
+    .login form{
+        width: 60%;  
+    }
+
+}
+@media screen and (max-width:440px){
+    .login form{
+        width: 80%;  
+    }
+
+}
