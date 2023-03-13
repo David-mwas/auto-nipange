@@ -1,0 +1,100 @@
+.contactUs{
+    /* margin-top: 20px;  */
+    background:linear-gradient(rgba(23,230,23,.4),
+    rgba(23,150,200,.3));
+    top: 0;
+    /* background:grey; */
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content:space-around;
+     width: 100%;
+     height: 100%;   
+}
+.contactUs form,.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+  
+  
+}
+.container{
+    border-radius: 5px;
+    width: 80%;
+    background:linear-gradient(rgba(23,230,23,.5),
+     rgba(23,150,200,.4));
+}
+.contactUs h2{
+    color:white ;
+    padding-top: 50px;
+    font-size: 20px;
+}
+form .inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+   
+}
+form .inputs input,input[type="submit"]{
+    padding: 5px;
+    padding-left: 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 18px;
+    max-width: 50%;
+    width: 25%; 
+    height: 1.5rem;  
+}
+form textarea{
+    padding: 12px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    max-width: 50%;
+    width: 25%; 
+    height: 5.5rem;     
+}
+input[type="submit"]{
+    text-transform: uppercase;
+    max-width: 40%;
+    width: 20%; 
+    font-size:14px;
+    font-weight: 600;
+    background: #000;
+    color: white;
+    padding: 2px;
+    height: 1.8rem; 
+}
+
+
+
+@media screen and (max-width:768px){
+form .inputs{
+    width: 100%;
+}
+form .inputs input{
+    max-width: 70%;
+    width: 70%;   
+}
+form textarea{
+    max-width: 70%;
+    width: 70%;     
+}
+input[type="submit"]{
+    max-width: 60%;
+    width: 60%;  
+}
+}
+@media screen and (max-width:375px){
+    .contactUs{
+        padding-top: 25px;
+    }
+}

@@ -27,24 +27,37 @@ header{
     width: 100%;
     height: 3.4rem;
     background:linear-gradient(rgba(23,230,23,.8), rgba(23,150,200,.8));
+   
 }
 .logo h1 a{
-    width: 50px;
-    height: 50px;
+    /* width: 80px; */
+    height: 60px;
     padding:1rem;
    margin-top:1rem;
    margin-bottom:1rem;
     display: flex;
     align-items: center;
     justify-content:center ; 
-    box-shadow: 1px 2px 13px greenyellow;
-    border-radius: 50%;  
+    /* box-shadow:inset 1px 2px 13px greenyellow; */
+    /* border-radius: 50%;   */
 }
 .logo img{
-    box-shadow: 0 0 0 1.5px greenyellow;
+    background: #000;
+    width: 50px;
+    height: 50px;
+    box-shadow:1px 2px 13px black;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
+    border-radius: 50px;
+    zoom: 101%;
+}
+.logo h4{
+    letter-spacing: 8px;
+    text-shadow: 1px 2px 5px black;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+    font-size: small;
 }
 .headericons{
     display: flex;
@@ -61,7 +74,7 @@ header{
     color: black;
 }
 header nav ul{
-
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content:center ;   
@@ -144,13 +157,17 @@ main .text{
   
 }
 .text h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-size: 3rem;
 }
 .text p{
+    font-weight: 500;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    
+    line-height: 20px;
     word-wrap:normal;
     word-break: normal;
     width: 50%;  
@@ -168,6 +185,7 @@ color:rgba(23,230,23,.6);
 .mainbtn .mbtn1,.mainbtn .mbtn2{
     text-transform: uppercase;
    margin-left: 2rem;
+   margin-right: 2rem;
     font-weight: bolder;
     text-align: center;
     display: inline-flex;
@@ -216,17 +234,21 @@ color:rgba(23,230,23,.6);
  }
  .About main{
     position:relative;
-    padding: 50px;
+    margin-top: 100px;
+    padding:50px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content:space-around;
     width: 100%;
     height: 40%; 
-    background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url("/static/assets/images/pic1.png") ;
-    background-position: center;
-    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.99)),url("/static/assets/images/IMG_20230310_165255.jpg") ;
+    background-position:center;
+    background-size: 900px;
     background-repeat: no-repeat;
+ }
+ .About main h2{
+    padding-top: 200px;
  }
  .aboutus{
     position:relative;
@@ -239,10 +261,10 @@ color:rgba(23,230,23,.6);
     height: 100%;
   
  }
- .aboutus #p{
-    max-width: 70%;
+ /* .aboutus #p{
+    max-width: 60%;
     width: 60%;
- }
+ } */
  .carocel{
     display: flex;
     align-items: center;
@@ -290,12 +312,12 @@ color:rgba(23,230,23,.6);
     position: absolute;
     top: 70px;
  }
- .blink{
+ /* .blink{
     font-size: 30px;
     color:rgba(23,230,23,.4) ;
     animation: 1s ease-in-out infinite blink;
- }
- @keyframes blink {
+ } */
+ /* @keyframes blink {
     0%{
         opacity: 0;
     }
@@ -303,63 +325,56 @@ color:rgba(23,230,23,.6);
         opacity: 1;
         
     }
- }
+ } */
 /* .bg{
     background: none;
 } */
-.services{
-    position:relative;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content:space-around;
-    width: 100%;
-    height: 100%;  
-}
-.contactUs{
-    margin-top: 20px; 
-    background:linear-gradient(rgba(23,230,23,.4),
-    rgba(23,150,200,.3));
+
+.maincontact{
+    /* margin-top: 20px;  */
+    background:linear-gradient(rgba(23,230,23,.5),
+     rgba(23,150,200,.4));
     top: 0;
     /* background:grey; */
      display: flex;
      align-items: center;
      flex-direction: column;
-     justify-content:space-around;
+     justify-content:space-between;
      width: 100%;
-     height: 100%;   
+     height: 50%; 
+     padding-bottom: 30px;
 }
-.contactUs form,.container{
+.maincontact form,.maincontainer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 130px;
   
   
 }
-.container{
+.maincontainer{
     border-radius: 5px;
-    width: 80%;
+    width: 30%;
     background:linear-gradient(rgba(23,230,23,.5),
      rgba(23,150,200,.4));
+  
 }
-/* .contactUs h2{
+.maincontact h2{
     color:white ;
-    padding-top: 50px;
-    font-size: 40px;
-} */
-form .inputs{
+    padding-top: 40px;
+    font-size: 17px;
+}
+form .maininputs{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 100%;
+    width: 170%;
    
 }
-form .inputs input,input[type="submit"]{
+form .maininputs input,form .maininputs input[type="submit"]{
     padding: 5px;
     padding-left: 12px;
     outline: none;
@@ -367,24 +382,13 @@ form .inputs input,input[type="submit"]{
     border-radius: 4px;
     margin: 18px;
     max-width: 50%;
-    width: 25%; 
+    width: 120%; 
     height: 1.5rem;  
 }
-form textarea{
-    padding: 12px;
-    resize: none;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    margin: 15px;
-    max-width: 50%;
-    width: 25%; 
-    height: 5.5rem;     
-}
-input[type="submit"]{
+ .maincontact #submit{
     text-transform: uppercase;
-    max-width: 40%;
-    width: 20%; 
+    max-width: 50%;
+    width: 30%; 
     font-size:14px;
     font-weight: 600;
     background: #000;
@@ -479,7 +483,33 @@ li>a>i{
     border-radius: 50%;
     color: white;
 }
-
+.service-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.services{
+   padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+}
+ .services .s-txt{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.s-txt p{
+    margin-top: 20px;
+}
 /* *****************************************
                login page
  ***************************************** */
@@ -510,16 +540,17 @@ li>a>i{
         border-bottom-left-radius: 5%;
         right: -200%;
         color: black;
-        top: 0rem;
+        top: 3.5rem;
         z-index: -188888;
         position: fixed;
         background:grey;
-        height: 206px;
+        height:200px;
         width: 200px;
        display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
+
     }
     .menubar{
         display: flex;
@@ -560,20 +591,20 @@ li>a>i{
         transition: all .6s ease-out;
         right: 0;
     } 
-    form .inputs{
-        width: 100%;
+    .maincontainer{
+        width: 70%;
     }
-    form .inputs input{
+
+    form .maininputs{
+        width: 110%;
+    }
+    form .maininputs input{
         max-width: 70%;
         width: 70%;   
     }
-    form textarea{
-        max-width: 70%;
-        width: 70%;     
-    }
-    input[type="submit"]{
-        max-width: 60%;
-        width: 60%;  
+    .maincontact #submit{
+        max-width: 50%;
+        width: 50%;  
     }
     .carocel{
         flex-direction: column;
@@ -582,11 +613,19 @@ li>a>i{
         height: 320%;
      }
      .About main{
+        margin-top: 0px;;
+        background-size:cover;
+     }
+     .About main{
         height: 20%;
      }
      .aboutus #p{
+        line-height: 20px;
+        word-break: break-all;
+        word-wrap: normal;
+        text-align: left;
         max-width: 100%;
-        width: 300px;
+        width: 100%;
      }
    
 }
@@ -612,6 +651,16 @@ li>a>i{
     .socillinks li>a>i{
         font-size: 14px;
     } 
+    .logo h1 a{
+        margin-left: -25px;
+    }
+    .logo h4{
+        margin-right: 0px;
+        margin-left: 3px;;
+        font-size: 10px;
+        letter-spacing:normal;
+        text-shadow: 1px 2px 5px black;
+    } 
 }
 @media screen and (max-width:375px){
     .mainbtn .mbtn1,.mainbtn .mbtn2{
@@ -622,7 +671,7 @@ li>a>i{
     .text h2{
         font-size: 1.2rem;
     } 
-    .contactUs{
+    .maincontactUs{
         padding-top: 25px;
     } 
 }
